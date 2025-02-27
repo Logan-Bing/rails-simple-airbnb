@@ -5,10 +5,23 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <script src="https://kit.fontawesome.com/69af44d716.js" crossorigin="anonymous"></script>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
+
+  <div class="header">
+    <div class="logo-container">
+      <h1> <%=link_to "Simple Airbnb", flats_path, class:"logo" %></h1>
+    </div>
+    <div class="search-container">
+      <input type="text" class="search-bar" placeholder="Search your flat">
+      <button class="search-button" >Search</button>
+      <button class="add-button" >Add Flat</button>
+    </div>
+  </div>
+
+
 
   <body>
     <%= yield %>

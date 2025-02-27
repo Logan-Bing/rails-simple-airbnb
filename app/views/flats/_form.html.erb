@@ -1,0 +1,6 @@
+<%= form_with(model: @flat, local: true) do |f| %>
+  <div class="field">
+    <%= f.label :name, "Name" %>
+    <%= f.text_field :name %>
+  </div>
+<% end %>

@@ -1,0 +1,8 @@
+<button>SIMPLE AIRBNB</button>
+
+<ul>
+  <% @flats.each do |flat| %>
+   <li><%= flat.name %></li>
+   <%= link_to "More details", flat_path(flat) %>
+  <%end%>
+</ul>

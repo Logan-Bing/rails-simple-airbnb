@@ -1,0 +1,30 @@
+<div class="main-content">
+  <h1><%= @flat.name %></h1>
+  <p><%= @flat.address %></p>
+</div>
+
+<div class="description-container">
+  <h2>A bit more about this flat...</h2>
+  <p><%= @flat.description %></p>
+</div>
+
+<div class="book_container">
+  <div class="book-form">
+
+  </div>
+  <div class="infos-container">
+    <span>Details</span>
+    <p><%= @flat.number_of_guests%></p>
+    <p><%= @flat.price_per_night%></p>
+  </div>
+  <div class="media-container">
+    <span>Share</span>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-pinterest"></i>
+  </div>
+
+  <button>
+     <%= link_to "Go Back", flats_path %>
+     </button>
+</div>
